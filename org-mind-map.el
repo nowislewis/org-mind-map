@@ -647,7 +647,7 @@ To customize, see the org-mind-map group.
 If DEBUG is non-nil, then print the dot command to the *Messages* buffer,
 and print the dotfile to the *Messages* buffer or to a file if DEBUG is a filename.
 If LINKSP is non-nil include graph edges for org links."
-  (let ((dot (org-mind-map-make-dot (org-mind-map-data linksp)))
+  (let ((dot (org-mind-map-make-dot (org-mind-map-data 1)))
 a	(outputtype (if (> (length org-mind-map-dot-output) 1)
 			(completing-read "Output file type: " org-mind-map-dot-output)
 		      (car org-mind-map-dot-output))))
