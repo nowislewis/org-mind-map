@@ -133,6 +133,7 @@
 (require 'dash)
 (require 'org)
 (require 'subr-x)
+(require 'ox-org)
 
 (defconst org-mind-map-version "0.4")
 
